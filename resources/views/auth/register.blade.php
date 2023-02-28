@@ -48,7 +48,7 @@
                 {{ __('Register') }}
             </x-primary-button>
 
-            <x-button-link class="ml-4">
+            <x-button-link class="ml-4" href="/auth/redirect">
                 {{ __('Use Github') }}
             </x-button-link>
         </div>

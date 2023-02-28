@@ -38,11 +38,12 @@ Route::get('/auth/redirect', function() {
 Route::get('/auth/callback', function() {
     $githubUser = Socialite::driver('github')->user();
 
-    $user = User::create([
+    $user = User::updateOrCreate([
+        'github_id' => $githubUser->id
+    ],[
         'name' => $githubUser->name,
         'email' => $githubUser->email,
         'github_id' => $githubUser->id,
-        'token' => $githubUser->token,
         'github_token' => $githubUser->token,
         'github_refresh_token' => $githubUser->refreshToken
     ]);

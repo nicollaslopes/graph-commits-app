@@ -47,6 +47,10 @@
             <x-primary-button class="ml-4">
                 {{ __('Register') }}
             </x-primary-button>
+
+            <x-button-link class="ml-4">
+                {{ __('Use Github') }}
+            </x-button-link>
         </div>
     </form>
 </x-guest-layout>

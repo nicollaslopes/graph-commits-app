@@ -12,6 +12,7 @@ class UserRepository
             'github_id' => $githubUser->id
         ],[
             'name' => $githubUser->name,
+            'nickname' => $githubUser->nickname,
             'email' => $githubUser->email,
             'github_id' => $githubUser->id,
             'github_token' => $githubUser->token,

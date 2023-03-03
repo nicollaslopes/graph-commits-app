@@ -13,4 +13,4 @@ Ao clicar em algum repositório, irá ser exibido um gráfico no qual o eixo X c
 - Execute o comando `php artisan key:generate`
 - Crie o arquivo do banco de dados com o comando `touch database/database.sqlite`
 - Execute o comando `php artisan migrate`
-- Para iniciar o projeto, execute no seu terminal o comando `./vendor/bin/sail up`.
+- Para iniciar o projeto, execute no seu terminal o comando `./vendor/bin/sail up` e `npm run dev`.
